@@ -1,0 +1,3 @@
+1.Add language switcher PL/ENG
+2.Images lazy loading
+3.When mobile-navi menu is on, then blur background and display 'X' button as exit from mobile-navi menu

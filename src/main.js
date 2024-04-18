@@ -8,3 +8,7 @@ import '../styles/components/contact.css'
 import '../styles/components/footer.css'
 import '../styles/components/mobile-nav.css'
 import '../styles/utils.css'
+
+import mobile_nav from './utils/mobile-nav.js'
+
+mobile_nav();

@@ -3,14 +3,14 @@
 */
 
 :root {
-    /* Colors */
+    /* Main Colors */
+    --clr-light-grey: #ebebeb;
+    --clr-text: #000000;
+
     --clr-papaya-whip: #FFECD1;
     --clr-dark-brown: #472417;
-    
-    --clr-light-grey: #ebebeb;
 
-    --clr-text: #000000;
-    
+    /* Maybe I will use these below maybe not */
     /* Matchin colors */
     --clr-yellow: #f7c469;
     --clr-idk: #c46352;
@@ -46,10 +46,13 @@
 }
 
 * {
-    /* Custom scrollbar for Firefox, width: auto or thin */
-    /* scrollbar-width: auto;
-    scrollbar-color: var(--clr-rose) var(--clr-dark); */
+    /* Debugging border */
     /* border: 1px solid red; */
+    
+    /* Custom scrollbar for Firefox, width: auto or thin */
+    scrollbar-width: auto;
+    scrollbar-color: var(--clr-rose) var(--clr-dark);
+
     margin: 0;
     line-height: calc(1em + 0.5rem);    /* Better scalling of text */
 }

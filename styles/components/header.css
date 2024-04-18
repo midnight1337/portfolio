@@ -4,6 +4,9 @@
     align-items: flex-end;
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    position: relative;
+    z-index: 9999;
 }
 
 .header__menu {
@@ -13,33 +16,47 @@
 .title__container {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-size: var(--size-xs);
 }
 
-.header__title {
-    text-transform: capitalize;
+/* To wrzucic do title container i wtedy kropke dac na size em wiec odziedziczy spacing po rodzicu */
+/* .header__title {
+    text-transform: uppercase;
     font-size: var(--size-2xl);
-}
+} */
 
-.header__bars {
+.header__menu-bar-btn {
     display: block;
     color: var(--clr-text);
     width: var(--size-2xl);
     height: var(--size-2xl);
 }
 
+/* TODO: Close button instead of bar when nav opened */
+#header__close-btn {
+    /* position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer; */
+    display: none;
+}
+
 .header__hr {
     color: var(--clr-text);
-    width: 94%;
+    width: 100%;
 }
 
 /* Blinking dot */
 #blink {
     display: inline-block;
-    width: 5px;
-    height: 5px;
+    width: 0.45em;
+    height: 0.45em;
     background-color: var(--clr-dark-brown);
     border-radius: 100px;
-    margin: -1px;
+    margin-left: 0.5em;
+    margin-bottom: 0.4em;
     animation-name: blink;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -56,13 +73,8 @@
 /* Media templates */
 /* xs */
 @media (min-width: 475px) {
-    .header__title {
-        font-size: var(--size-3xl);
-    }
-
-    #blink {
-        width: 7px;
-        height: 7px;
+    .title__container {
+        font-size: var(--size-sm);
     }
 }
 
@@ -71,6 +83,17 @@
 
 /* md */
 @media (min-width: 768px) {
+    .title__container {
+        font-size: var(--size-base);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .title__container {
+        font-size: var(--size-lg);
+    }
+
     .header__menu {
         display: flex;
         align-items: center;
@@ -81,7 +104,7 @@
 
     .header__link {
         display: block;
-        font-size: var(--size-xs);
+        font-size: var(--size-base);
         text-decoration: none;
         font-weight: 500;
         color: var(--clr-text);
@@ -97,7 +120,7 @@
     }
 
     .header__resume {
-        font-size: var(--size-xs);
+        font-size: var(--size-base);
     }
 
     .header__line {
@@ -105,31 +128,15 @@
         padding-top: 1.5em;
     }
 
-    .header__bars {
+    .header__menu-bar-btn {
         display: none;
-    }
-}
-
-/* lg */
-@media (min-width: 1024px) {
-    .header__link {
-        font-size: var(--size-base);
-    }
-
-    .header__resume {
-        font-size: var(--size-base);
     }
 }
 
 /* xl */
 @media (min-width: 1280px) {
-    .header__title {
-        font-size: var(--size-4xl);
-    }
-
-    #blink {
-        width: 8px;
-        height: 8px;
+    .title__container {
+        font-size: var(--size-2xl);
     }
 
     .header__menu {
@@ -148,12 +155,7 @@
 
 /* 2xl */
 @media (min-width: 1536px) {
-    .header__title {
-        font-size: var(--size-5xl);
-    }
-
-    #blink {
-        width: 10px;
-        height: 10px;
+    .title__container {
+        font-size: var(--size-3xl);
     }
 }
