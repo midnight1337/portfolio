@@ -82,16 +82,11 @@ svg {
 }
 
 button {
-    /* block takes entire width, forces new line above or below it, it has dimensions. div is block by default*/
-    /* Inline element's cant have width or height, it takes as much space as it needs */
-    /* However if you want to have an itim inline with width/height parameters then we use inline-block */
-    /*  inline-block does not add a line-break after the element */
     display: inline-block;
     padding: 0;
     border: none;
     background: none;
     cursor: pointer;
-    /* Inherit color of its parent so it goes to body color */
     color: inherit;
 }
 

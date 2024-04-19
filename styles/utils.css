@@ -18,6 +18,74 @@ Overrite common elements here
     transform: translateX(5px);
 }
 
+.test-btn {
+    font-weight: 500;
+    padding: 0.5em 1em;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-family: Inter, sans-serif;
+    color: var(--clr-text);
+    background-color: var(--clr-light-grey);
+    border: 2px solid var(--clr-text);
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.test-btn:after {
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: var(--clr-text);
+    border-radius: 8px;
+    transform: translate(0px, 0px);
+    transition: transform .2s ease-out;
+}
+
+/* .test-btn:hover {
+    color: var(--clr-light-grey);
+    background-color: var(--clr-dark-brown);
+} */
+
+.test-btn:hover:after {
+    transform: translate(6px, 6px);
+}
+
+
+
+.test-btn-2 {
+    font-weight: 500;
+    padding: 0.5em 1em;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-family: Inter, sans-serif;
+    color: var(--clr-text);
+    background-color: var(--clr-light-grey);
+    border: 2px solid var(--clr-text);
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.test-btn-2:hover {
+    color: var(--clr-light-grey);
+    background-color: var(--clr-dark-brown);
+}
+
+.test-btn-2:hover:after {
+    transform: translate(6px, 6px);
+}
+
+
+
 .container {
     width: 100%;
     margin-left: auto;
