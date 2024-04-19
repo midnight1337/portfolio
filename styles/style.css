@@ -51,7 +51,7 @@
     
     /* Custom scrollbar for Firefox, width: auto or thin */
     scrollbar-width: auto;
-    scrollbar-color: var(--clr-rose) var(--clr-dark);
+    scrollbar-color: var(--clr-dark-brown) var(--clr-light-grey);
 
     margin: 0;
     line-height: calc(1em + 0.5rem);    /* Better scalling of text */
@@ -63,9 +63,7 @@ html {
 
 body {
     font-family: 'General Sans', sans-serif;
-    /* Container color */
     background-color: var(--clr-light-grey);
-    /* Container element color */
     color: var(--clr-text);
     letter-spacing: 0.15em;
 }

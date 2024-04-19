@@ -1,0 +1,35 @@
+.about {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about__title {
+    display: inline-block;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__title {
+    font-size: var(--size-2xl);
+    color: var(--clr-text);
+}
+
+.about__description {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+}
+
+.about__hr {
+    border-color: var(--clr-slate800);
+}
+
+.about__img-wrapper {
+    width: 40.75rem;
+}

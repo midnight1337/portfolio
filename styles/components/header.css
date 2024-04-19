@@ -4,9 +4,9 @@
     align-items: flex-end;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
     position: relative;
     z-index: 9999;
+    border-bottom: 2px solid black;
 }
 
 .header__menu {
@@ -20,12 +20,6 @@
     text-transform: uppercase;
     font-size: var(--size-xs);
 }
-
-/* To wrzucic do title container i wtedy kropke dac na size em wiec odziedziczy spacing po rodzicu */
-/* .header__title {
-    text-transform: uppercase;
-    font-size: var(--size-2xl);
-} */
 
 .header__menu-bar-btn {
     display: block;
