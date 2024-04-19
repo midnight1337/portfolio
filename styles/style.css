@@ -66,6 +66,7 @@ body {
     background-color: var(--clr-light-grey);
     color: var(--clr-text);
     letter-spacing: 0.15em;
+    margin-bottom: 5em;
 }
 
 /* By default these elements are inline so we overrite them */

@@ -18,6 +18,7 @@ Overrite common elements here
     transform: translateX(5px);
 }
 
+/* Test button */
 .test-btn {
     font-weight: 500;
     padding: 0.5em 1em;
@@ -57,8 +58,6 @@ Overrite common elements here
     transform: translate(6px, 6px);
 }
 
-
-
 .test-btn-2 {
     font-weight: 500;
     padding: 0.5em 1em;
@@ -83,8 +82,7 @@ Overrite common elements here
 .test-btn-2:hover:after {
     transform: translate(6px, 6px);
 }
-
-
+/* End of Test button */
 
 .container {
     width: 100%;
@@ -96,6 +94,47 @@ Overrite common elements here
 
 .section {
     margin-top: 5rem;
+}
+
+.section__title {
+    display: inline-block;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 0.1em solid var(--clr-text);
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 2.5s steps(50, end),
+        blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--clr-text);
+    }
 }
 
 
