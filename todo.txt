@@ -1,3 +1,15 @@
-1.Add language switcher PL/ENG
-2.Images lazy loading
-3.When mobile-navi menu is on, then blur background and display 'X' button as exit from mobile-navi menu
+TODO:
+Header - remove border bottom, do hr instead
+Dont scrollreveal about section on mobile screen
+
+
+TODO LATER:
+Add language switcher PL/ENG
+Images lazy loading
+When mobile-navi menu is on, then blur background and display 'X' button as exit from mobile-navi menu
+
+
+DONE:
+When section appears on screen, there is animation with writing the title
+About image should hover,
+About description should hover

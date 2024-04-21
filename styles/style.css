@@ -4,8 +4,12 @@
 
 :root {
     /* Main Colors */
-    --clr-light-grey: #ebebeb;
+    /* --clr-light-grey: #ebebeb; */
+    --clr-light-grey: #e0dfdd;
+    --clr-dark-grey: #e0dfdd;
     --clr-text: #000000;
+
+    /* --clr-dark-grey: rgba(224,223,221,255) */
 
     --clr-papaya-whip: #FFECD1;
     --clr-dark-brown: #472417;
@@ -24,6 +28,7 @@
     --clr-slate800: #1e293b;
     --clr-rose: #e11d48;
     --clr-indigo: #4f46e5;
+    --clr-light-blue: #3b6388;
     /* Rose rgb(225, 29, 72) */
     /* Indigo rgb(79, 70, 229) */
 
@@ -51,10 +56,12 @@
     
     /* Custom scrollbar for Firefox, width: auto or thin */
     scrollbar-width: auto;
-    scrollbar-color: var(--clr-rose) var(--clr-dark);
+    scrollbar-color: var(--clr-dark-brown) var(--clr-light-grey);
 
     margin: 0;
     line-height: calc(1em + 0.5rem);    /* Better scalling of text */
+
+    box-sizing: border-box;
 }
 
 html {
@@ -63,9 +70,7 @@ html {
 
 body {
     font-family: 'General Sans', sans-serif;
-    /* Container color */
     background-color: var(--clr-light-grey);
-    /* Container element color */
     color: var(--clr-text);
     letter-spacing: 0.15em;
 }
@@ -82,16 +87,11 @@ svg {
 }
 
 button {
-    /* block takes entire width, forces new line above or below it, it has dimensions. div is block by default*/
-    /* Inline element's cant have width or height, it takes as much space as it needs */
-    /* However if you want to have an itim inline with width/height parameters then we use inline-block */
-    /*  inline-block does not add a line-break after the element */
     display: inline-block;
     padding: 0;
     border: none;
     background: none;
     cursor: pointer;
-    /* Inherit color of its parent so it goes to body color */
     color: inherit;
 }
 

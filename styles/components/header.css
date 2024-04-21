@@ -4,9 +4,9 @@
     align-items: flex-end;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
     position: relative;
     z-index: 9999;
+    border-bottom: 2px solid black;
 }
 
 .header__menu {
@@ -20,12 +20,6 @@
     text-transform: uppercase;
     font-size: var(--size-xs);
 }
-
-/* To wrzucic do title container i wtedy kropke dac na size em wiec odziedziczy spacing po rodzicu */
-/* .header__title {
-    text-transform: uppercase;
-    font-size: var(--size-2xl);
-} */
 
 .header__menu-bar-btn {
     display: block;
@@ -47,27 +41,6 @@
     color: var(--clr-text);
     width: 100%;
 }
-
-/* Blinking dot */
-#blink {
-    display: inline-block;
-    width: 0.45em;
-    height: 0.45em;
-    background-color: var(--clr-dark-brown);
-    border-radius: 100px;
-    margin-left: 0.5em;
-    margin-bottom: 0.4em;
-    animation-name: blink;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-/* End of blinking dot */
 
 
 /* Media templates */
@@ -140,7 +113,6 @@
     }
 
     .header__menu {
-        align-self: center;
         gap: 3em;
     }
 
@@ -156,6 +128,6 @@
 /* 2xl */
 @media (min-width: 1536px) {
     .title__container {
-        font-size: var(--size-3xl);
+        font-size: var(--size-4xl);
     }
 }
