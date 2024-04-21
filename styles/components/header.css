@@ -42,27 +42,6 @@
     width: 100%;
 }
 
-/* Blinking dot */
-#blink {
-    display: inline-block;
-    width: 0.45em;
-    height: 0.45em;
-    background-color: var(--clr-dark-brown);
-    border-radius: 100px;
-    margin-left: 0.5em;
-    margin-bottom: 0.4em;
-    animation-name: blink;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-/* End of blinking dot */
-
 
 /* Media templates */
 /* xs */
@@ -149,6 +128,6 @@
 /* 2xl */
 @media (min-width: 1536px) {
     .title__container {
-        font-size: var(--size-3xl);
+        font-size: var(--size-4xl);
     }
 }

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- Remixicons CSS - icons stuff -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!-- Scrollreveal - this is used for photo slowly showing up -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     
     <title>Portfolio</title>
 </head>
@@ -18,10 +20,7 @@
 <body>
     <header class="header container">
         <div class="title__container">
-            <h1 class="header__title">
-                Kamil.<span>Kołtowski </span>
-            </h1>
-            <!-- <div id="blink"></div> -->
+            <h1 class="header__title">Kamil.<span>Kołtowski </span></h1>
         </div>
         <nav>
             <ul class="header__menu">
@@ -32,7 +31,7 @@
                     <a href="#work" class="header__link">Work</a>
                 </li>
                 <li>
-                    <a href="#featured" class="header__link">Featured</a>
+                    <a href="#featured" class="header__link">Projects</a>
                 </li>
                 <li>
                     <a href="#contact" class="header__link">Contact</a>
@@ -90,16 +89,16 @@
                         <br>
                         My everyday motto is <strong>'Always strive and Prosper'</strong> by A$AP ROCKY nigga.
                     </p>
-                    <hr class="about__hr" />
+                    <hr class="content__hr" />
                     <h2 class="about__subtitle">Technologies I'm familiar with</h2>
                     <div class="about__technologies-wrapper">
-                        <ul class="about__technologies">
+                        <ul class="about__technologies-ul">
                             <li class="about__list">Python</li>
                             <li class="about__list">Django</li>
                             <li class="about__list">C++</li>
                             <li class="about__list">HTML - CSS -JS</li>
                         </ul>
-                        <ul class="about__technologies">
+                        <ul class="about__technologies-ul">
                             <li class="about__list">MySQL</li>
                             <li class="about__list">Arduino</li>
                             <li class="about__list">Linux</li>
@@ -107,9 +106,9 @@
                         </ul>
                     </div>
                     <hr class="about__hr" />
-                    <h2 class="about__subtitle">Connect with me</h2>
+                    <h2 class="about__subtitle">Connect with me (aside??)</h2>
                     <div class="about__social-wrapper">
-                        <ul class="about__social-medias">
+                        <ul class="about__social-ul">
                             <li class="about__list">
                                 <a href="" class="icons">
                                     <i class="ri-linkedin-box-line"></i>
@@ -125,12 +124,12 @@
                                     <i class="ri-instagram-line"></i>
                                 </a>
                             </li>
-                            <a href="" class="test-btn">Email me</a>
+                            <a href="" class="btn-shadow">Email me</a>
                         </ul>
                     </div>
                 </div>
                 <div class="about__img-wrapper">
-                    <img src="about-picture.jpeg" alt="profile-picture">
+                    <img class="about__img" src="about-picture.jpeg" alt="profile-picture">
                 </div>
             </div>
         </section>
