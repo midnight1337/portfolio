@@ -53,14 +53,11 @@
 * {
     /* Debugging border */
     /* border: 1px solid red; */
-    
     /* Custom scrollbar for Firefox, width: auto or thin */
     scrollbar-width: auto;
     scrollbar-color: var(--clr-dark-brown) var(--clr-light-grey);
-
     margin: 0;
     line-height: calc(1em + 0.5rem);    /* Better scalling of text */
-
     box-sizing: border-box;
 }
 
@@ -69,10 +66,12 @@ html {
 }
 
 body {
-    font-family: 'General Sans', sans-serif;
+    /* font-family: 'General Sans', sans-serif; */
+    font-family: trebuchet ms, 'sans-serif';
     background-color: var(--clr-light-grey);
     color: var(--clr-text);
     letter-spacing: 0.15em;
+    margin-bottom: 5rem;
 }
 
 /* By default these elements are inline so we overrite them */
