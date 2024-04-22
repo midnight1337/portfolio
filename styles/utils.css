@@ -2,6 +2,18 @@
     Common interfaces
 */
 
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.section {
+    margin-top: 8rem;
+}
+
 .btn {
     display: inline-block;
     font-weight: 500;
@@ -85,18 +97,6 @@
 
 /* End of Test button */
 
-.container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
-.section {
-    margin-top: 5rem;
-}
-
 .icons {
     display: inline-block;
     font-size: var(--size-3xl);
@@ -114,6 +114,7 @@
     border-color: var(--clr-text);
 }
 
+/* Blinking cursor and typing effect */
 @keyframes typing {
     from {
         width: 0
@@ -137,6 +138,7 @@
         border-right-color: transparent
     }
 }
+/* Blinking cursor and typing effect */
 
 /* Blinking dot */
 /* <div id="blink"></div> */
@@ -180,10 +182,6 @@
 @media (min-width: 1024px) {
     .container {
         max-width: 1024px;
-    }
-
-    .section {
-        margin-top: 10rem;
     }
 }
 

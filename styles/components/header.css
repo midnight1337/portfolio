@@ -19,6 +19,7 @@
     align-items: flex-end;
     text-transform: uppercase;
     font-size: var(--size-xs);
+    font-family: andale mono, 'monospace';
 }
 
 .header__menu-bar-btn {
