@@ -5,11 +5,10 @@ Add slightly black fade going from top to some point of the page
 Do connect with me aside when section about not visible
 section__title-container and section__title shares settings between all media queries taken from about section - to be inspected
 Margin top of section in mobile version too big, use media queries
+Projects image hovers when mouse on
 
 
 TODO LATER:
-Add language switcher PL/ENG
-Images lazy loading
 When mobile-navi menu is on, then blur background and display 'X' button as exit from mobile-navi menu
 Load media animations only when they are visible on page scroll: https://stackoverflow.com/questions/27462306/css3-animate-elements-if-visible-in-viewport-page-scroll
 
