@@ -14,6 +14,7 @@
 
     --clr-papaya-whip: #FFECD1;
     --clr-dark-brown: #472417;
+    --clr-dark-brown-footer: #291a15;
 
     /* Maybe I will use these below maybe not */
     /* Matchin colors */
@@ -72,7 +73,6 @@ body {
     background-color: var(--clr-light-grey);
     color: var(--clr-text);
     letter-spacing: 0.15em;
-    margin-bottom: 5rem;
 }
 
 /* By default these elements are inline so we overrite them */

@@ -26,6 +26,8 @@
     list-style: none;
     font-size: var(--size-sm);
     padding: 0;
+    color: var(--clr-light-blue);
+    margin-top: 1rem;
 }
 
 .project__description {
@@ -166,7 +168,6 @@
     
     .project__stack-ul {
         font-size: var(--size-lg);
-        color: var(--clr-light-blue);
     }
     
     .project__description {
