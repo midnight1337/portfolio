@@ -88,8 +88,8 @@
                     <h2 class="about__subtitle">Hello there, I'm Kamil 👋</h2>
                     <p class="about__description">
                         I'm an aspiring software engineer, with a very strong technical educational background in a
-                        field of a computer science, electronics and programming,
-                        and almost 4 years of an experience in an IT industry.
+                        field of a computer science, electronics and programming.
+                        Basically I love doing creative stuff.
                     </p>
                     <hr class="content__hr" />
                     <h2 class="about__subtitle">Technologies I'm familiar with</h2>
@@ -142,7 +142,8 @@
                 <div class="experience__responsibilites-wrapper">
                     <ul class="experience__responsibilities-ul">
                         <li class="experience__list">
-                            Development of a tool in Python, that automates log collection on a remote servers via SSH (see NLR
+                            Development of a tool in Python, that automates log collection on a remote servers via SSH
+                            (see NLR
                             project in Porgramming Projects section)
                         </li>
                         <li class="experience__list">
@@ -161,9 +162,131 @@
                             Substituting my Technical Leader during his absence
                         </li>
                     </ul>
-                </div> 
+                </div>
             </div>
-            <hr class="experience__hr" />
+            <!-- <hr class="experience__hr" /> -->
+        </section>
+        <section id="projects" class="projects container section">
+            <div class="section__title-container">
+                <h1 class="section__title">Projects</h1>
+            </div>
+            <div class="projects__container">
+                <!-- Project 1 -->
+                <h3 class="project__title-mobile">NLR (Nokia Log Reaper)</h3>
+                <div class="project__img-wrapper project__img-1">
+                    <img class="project__img" src="./projects_nlr.jpg" alt="">
+                </div>
+                <div class="project__content project__content-1">
+                    <h3 class="project__title-desktop">NLR (Nokia Log Reaper)</h3>
+                    <ul class="project__stack-ul">
+                        <li class="project__list">
+                            Python
+                        </li>
+                        <li class="project__list">
+                            Paramiko
+                        </li>
+                        <li class="project__list">
+                            Threading
+                        </li>
+                    </ul>
+                    <p class="project__description">
+                        NLR is a tool that I've created during my time in Nokia, it purpose was to automate log collection on remote SSH servers (Copy data between remotes, executing scripts, monitoring of particular PID, Rebooting servers). 
+                        Each ssh session is executed as own thread so tool is available to do multiple operations on many servers at once, without affecting each other.
+                    </p>
+                    <div>
+                        See more details on:
+                        <a target="_blank" href="https://github.com/midnight1337/NLR" class="icons">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <h3 class="project__title-mobile">Digital Guitar Stompbox</h3>
+                <div class="project__img-wrapper project__img-2">
+                    <img class="project__img" src="./projects_arduino-stmpbx.jpeg" alt="">
+                </div>
+                <div class="project__content project__content-2">
+                    <h3 class="project__title-desktop">Digital Guitar Stompbox</h3>
+                    <ul class="project__stack-ul">
+                        <li class="project__list">
+                            C++
+                        </li>
+                        <li class="project__list">
+                            Atmega328P
+                        </li>
+                        <li class="project__list">
+                            DSP
+                        </li>
+                    </ul>
+                    <p class="project__description">
+                        This is my graduation project on University Of Science and Technology in Wroclaw.
+                        This is a Arduino based, fully digital guitar effects module. It contains in total four effects algorithms, user can select two of them, and switch between them while playing on a electric guitar.
+                        Project was designed on a PCB using many electronic components, not only Atmega328P processor.
+                    </p>
+                    <div>
+                        See more details on:
+                        <a target="_blank" href="https://github.com/midnight1337/DigitalGuitarStompbox" class="icons">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <h3 class="project__title-mobile">Nixie Clock</h3>
+                <div class="project__img-wrapper project__img-3">
+                    <img class="project__img" src="./projects_arduino-stmpbx.jpeg" alt="profile-picture">
+                </div>
+                <div class="project__content project__content-3">
+                    <h3 class="project__title-desktop">Nixie Clock</h3>
+                    <ul class="project__stack-ul">
+                        <li class="project__list">
+                            C++
+                        </li>
+                        <li class="project__list">
+                            Atmega328P
+                        </li>
+                    </ul>
+                    <p class="project__description">
+                        This is pretty cool looking clock based on vintage Nixie Tubes that were used in very old devices.
+                    </p>
+                    <div>
+                        See more details on:
+                        <a target="_blank" href="https://github.com/midnight1337/NixieClock" class="icons">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <h3 class="project__title-mobile">KAMIL.KOLTOWSKI</h3>
+                <div class="project__img-wrapper project__img-4 last-image">
+                    <img class="project__img" src="./projects_portfolio.png" alt="">
+                </div>
+                <div class="project__content project__content-4">
+                    <h3 class="project__title-desktop last-title">KAMIL.KOLTOWSKI</h3>
+                    <ul class="project__stack-ul">
+                        <li class="project__list">
+                            HTML
+                        </li>
+                        <li class="project__list">
+                            CSS
+                        </li>
+                        <li class="project__list">
+                            JS
+                        </li>
+                    </ul>
+                    <p class="project__description">
+                        Basically website you are currently on.
+                    </p>
+                    <div>
+                        See more details on:
+                        <a target="_blank" href="https://github.com/midnight1337/portfolio" class="icons">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

@@ -104,6 +104,7 @@
     
     .experience__responsibilities-ul {
         font-size: var(--size-lg);
+        list-style-position: outside;
     }
 }
 
