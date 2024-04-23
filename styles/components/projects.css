@@ -46,6 +46,15 @@
     align-self: start;
 }
 
+.project__img {
+    border: 2px solid black;
+    transition: all 3s;
+}
+
+.project__img:hover{
+    transform: scale(1.1);
+}
+
 /* Media templates */
 /* xs */
 @media (min-width: 475px) {
